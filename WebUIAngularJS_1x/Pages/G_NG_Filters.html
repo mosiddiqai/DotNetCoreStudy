@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/appJS/appJs.js"></script>
+</head>
+<body>
+
+    <div ng-app="filtersApp">
+        <div ng-controller="myCtrl">
+
+            Tows to display : <input type="number" step="1" min="0" max="5" ng-model="rowLimit"/>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date of Birth</th>
+                        <th>Gender</th>
+                        <th>Salary (number)</th>
+                        <th>Salary (currency)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="employee in employees | limitTo: rowLimit">
+                        <td>{{employee.name | uppercase}}</td>
+                        <td>{{employee.dateofBirth | date : "yyyy-MMM-dd"}}</td>
+                        <td>{{employee.gender | lowercase}}</td>
+                        <td>{{employee.salary | number:2}}</td>
+                        <td>{{employee.salary | currency: "Rs ": 1}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

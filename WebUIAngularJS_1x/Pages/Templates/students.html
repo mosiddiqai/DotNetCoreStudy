@@ -1,0 +1,12 @@
+﻿
+<h1>{{message}}</h1>
+
+<!--<h2>{{Studentsregisters}}</h2>-->
+
+<ul>
+    <li ng-repeat="employee in employees">
+        <a href="students/{{employee.EmpID}}">{{employee.FirstName}}</a> 
+    </li>
+</ul>
+
+<button ng-click="studentsController.reloadData()">Reload Data</button>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ElevatorSystem.ElevatorAllocationDispatchDestinationStrategy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAEAAAAAA=</HashCode>
+      <FileName>ElevatorAllocationStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ElevatorSystem.Button" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABgAAAAAAAAAAAACAAAAAAAEAAAQAA=</HashCode>
+      <FileName>ElevatorButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElevatorSystem.ElevatorButton" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>ElevatorButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElevatorSystem.FloorButton" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>ElevatorButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElevatorSystem.ElevatorCar" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFGAABGAIAABAAEAIACBA0EAAAkAAAASQAQAAABAAA=</HashCode>
+      <FileName>ElevatorCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElevatorSystem.ElevatorCarPassenger" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElevatorCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElevatorSystem.ElevatorServiceRequestLinkedListHelper" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElevatorCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElevatorSystem.ElevatorController" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAACBAAAAABECQAAAIAJEAEIAQQAAAACAAAA=</HashCode>
+      <FileName>ElevatorController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElevatorSystem.ElevatorServiceRequest" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAQAAABAIAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>ElevatorModelStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElevatorSystem.ElevatorRequestPipeline" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAQACAAAAAAAAAAAAAIAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ElevatorRequestPipeline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ElevatorSystem.ElevatorRequestSimpleAlgorithm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElevatorRequestStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ElevatorSystem.Program" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ElevatorSystem.IElevatorAllocationStrategy" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElevatorAllocationStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ElevatorSystem.IElevatorRequestStrategy" Collapsed="true">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElevatorRequestStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ElevatorSystem.ElevatorDirection" Collapsed="true">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ElevatorModelStructure.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ElevatorSystem.ElevatorCarStatus" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABABAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>ElevatorModelStructure.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

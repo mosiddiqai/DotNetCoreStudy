@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/appJS/appJs.js"></script>
+</head>
+<body>
+    <div ng-app="myApp">
+        <div ng-controller="myCtrl">
+            Message is : {{message}}
+            <br />
+            Message with incorrect property : {{incorrectproperty}}
+
+            <br />
+            <br />
+            Complex object example (i.e. Employee)
+            <br />
+
+            First Name : {{employee.firstName}} <br />
+            Last Name : {{employee.lastName}} <br />
+            Gender : {{employee.gender}} <br />
+
+
+        </div>
+
+        <div ng-controller="myCtrl">
+
+            <br />
+            Example of using incorrect controller/property name : 
+            <br />
+
+            Message is : {{message}}
+            <br />
+            Message with incorrect property : {{incorrectproperty}}
+
+            <br />
+            <br />
+            Complex object example (i.e. Employee)
+            <br />
+
+            First Name : {{employee.firstNames}} <br />
+            Last Name : {{employee.lastName}} <br />
+            Gender : {{employee.gender}} <br />
+
+
+        </div>
+
+
+    </div>
+</body>
+</html>

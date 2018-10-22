@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/appJS/appJs.js"></script>
+</head>
+<body>
+    <div ng-app="httpServices">
+        <div ng-controller="myCtrl">
+            {{errorDetails}}<br /><br />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>Salary (number)</th>
+                        <th>Salary (currency)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="employee in employees">
+                        <td>{{employee.EmpID}}</td>
+                        <td>{{employee.FirstName | uppercase}}</td>
+                        <td>{{employee.LastName | uppercase}}</td>
+                        <!--<td>{{employee.dateofBirth | date : "yyyy-MMM-dd"}}</td>-->
+                        <td>{{employee.Gender }}</td>
+                        <td>{{employee.Salary | number:2}}</td>
+                        <td>{{employee.Salary | currency: "Rs ": 1}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/angular.min.js"></script>
+
+    <script src="../Scripts/appJS/appJs.js"></script>
+    <script src="../Scripts/appJS/appCustomFilters.js"></script>
+    <script src="../Scripts/appJS/appCustomServices.js"></script>
+</head>
+<body>
+    <div ng-app="customServices">
+        <table ng-controller="myCtrl">
+            <tr>
+                <td>Your String</td>
+                <td><input type="text" ng-model="input"/> </td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td><input type="text" ng-model="output" /> </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="Process" ng-click="transformString(input)" /></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

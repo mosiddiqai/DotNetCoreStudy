@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/appJS/appJs.js"></script>
+</head>
+<body ng-app="CtrlAsDemo">
+
+    <!--<div ng-controller="countryCtrl">
+        {{name}}
+        <div ng-controller="stateCtrl">
+            {{name}}
+            <div ng-controller="cityCtrl">
+                {{name}}
+            </div>
+        </div>
+    </div>-->
+    <!--<div ng-controller="countryCtrl">
+        {{name}}
+        <div ng-controller="stateCtrl">
+            {{$parent.name}} - {{name}}
+            <div ng-controller="cityCtrl">
+                {{$parent.$parent.name}} - {{$parent.name}} - {{name}}
+            </div>
+        </div>
+    </div>-->
+    <!--Since we will get too much complexity of the object reference from hierarchy level increase (e.g. here we have 3 levels)-->
+    <!--Hence for such situations we should make use of "Controller as " syntax so that we refer to name by name of controller-->
+    <div ng-controller="countryCtrl as country">
+        {{country.name}} <br />
+        {{cntryMessage}} - demo explaining that $scope and "Controller as syntax" can be used together
+        <div ng-controller="stateCtrl as state">
+            {{country.name}} - {{state.name}}<br />
+            {{stateMessage}} - demo explaining that $scope and "Controller as syntax" can be used together
+            <div ng-controller="cityCtrl as city">
+                {{country.name}} - {{state.name}} - {{city.name}} <br />
+                {{cityMessage}} - demo explaining that $scope and "Controller as syntax" can be used together
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
